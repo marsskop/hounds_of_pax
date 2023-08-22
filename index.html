@@ -98,52 +98,149 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="/HOUNDS_OF_PAX" startnode="1" creator="Twine" creator-version="2.7.0" format="SugarCube" format-version="2.36.1" ifid="B20B50BF-927E-4D55-9E6C-F7A9B68CD34E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage {
- line-height: 0.5; 
+	<tw-storydata name="/HOUNDS_OF_PAX" startnode="2" creator="Twine" creator-version="2.7.0" format="SugarCube" format-version="2.36.1" ifid="B20B50BF-927E-4D55-9E6C-F7A9B68CD34E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage {
+  word-wrap: normal;
+  white-space: normal;
+  display: block;
+  height: auto;
+  margin: 3px auto;
+  line-height: 1.4;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
-.green_input {
-  color: LawnGreen;
+.binary {
+   word-break: break-all; 
 }
 
-.error_msg {
-  color: red;
+.blue {
+  color: DodgerBlue;
 }
 
-.success_msg {
-  color: white; 
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.history.controls = false;
-Config.history.maxStates = 1;</script><tw-tag name="green" color="none"></tw-tag><tw-passagedata pid="1" name="0" tags="" position="125,75" size="100,100">&lt;&lt;type 60ms&gt;&gt;
-  &lt;div class=&quot;green_input&quot;&gt;
-  	\&gt; ssh root@noosphere.central.vrd:22
-  &lt;/div&gt;
-&lt;&lt;/type&gt;&gt;
+.green {
+  color: LimeGreen;
+}
+
+.red {
+  color: FireBrick;
+}
+
+.white {
+  color: GhostWhite; 
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy();
+Config.history.controls = false;
+Config.history.maxStates = 1;</script><tw-tag name="green" color="none"></tw-tag><tw-passagedata pid="1" name="0" tags="" position="25,50" size="100,100">&lt;&lt;type 60ms&gt;&gt;&lt;span class=&quot;green&quot;&gt;&gt; ssh root@noosphere.central.vrd:22&lt;/span&gt;&lt;&lt;/type&gt;&gt;
 &lt;&lt;timed 4s&gt;&gt;
-  &lt;div class=&quot;error_msg&quot;&gt;
-	  ssh: connect to host noosphere.central.vrd port 22: Connection refused
+&lt;div class=&quot;white&quot;&gt;
+&lt;nowiki&gt;=====================================&lt;/nowiki&gt;&lt;br&gt;
+&lt;nowiki&gt;---------&lt;/nowiki&gt; Unauthorized access is prohibited &lt;nowiki&gt;--------&lt;/nowiki&gt; &lt;br&gt;
+- Only &lt;span class=&quot;red&quot;&gt;authorized&lt;/span&gt; users can access this system - &lt;br&gt;
+&lt;nowiki&gt;=====================================&lt;/nowiki&gt;&lt;br&gt;
+&lt;/div&gt;
+  &lt;div class=&quot;red&quot;&gt;
+root@noosphere.central.vrd:22: Permission denied
   &lt;/div&gt;
 &lt;&lt;next 1s&gt;&gt;
 &lt;&lt;type 60ms&gt;&gt;
-  &lt;div class=&quot;green_input&quot;&gt;
-  	\&gt; sudo mkdir /mnt/access_keys
+  &lt;div class=&quot;green&quot;&gt;
+\&gt; sudo mkdir /mnt/access_keys
   &lt;/div&gt;
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;next&gt;&gt;
 &lt;&lt;type 60ms&gt;&gt;
-  &lt;div class=&quot;green_input&quot;&gt;
-  	\&gt; sudo mount /dev/not_stolen_drive /mnt/access_keys
+  &lt;div class=&quot;green&quot;&gt;
+\&gt; sudo mount /dev/not_stolen_drive /mnt/access_keys
   &lt;/div&gt;
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;next&gt;&gt;
 &lt;&lt;type 60ms&gt;&gt;
-  &lt;div class=&quot;green_input&quot;&gt;
-  	\&gt; ssh root@noosphere.central.vrd:22
+  &lt;div class=&quot;green&quot;&gt;
+\&gt; ssh root@noosphere.central.vrd:22
   &lt;/div&gt;
 &lt;&lt;/type&gt;&gt;
 &lt;&lt;next 10s&gt;&gt;
-  &lt;div class=&quot;success_msg&quot;&gt;
-  	Last login: 4.789.999.M41
-  &lt;/div&gt;
+  &lt;&lt;goto &quot;1&quot;&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="1" tags="" position="275,50" size="100,100">&lt;&lt;type 60ms&gt;&gt;
+&lt;span class=&quot;green&quot;&gt;CONNECTING to noosphere.central.vrd:22................&lt;/span&gt;
+&lt;&lt;/type&gt;&gt;
+&lt;&lt;timed 4s&gt;&gt;
+&lt;html&gt;&lt;pre style=&quot;line-height:1&quot;&gt;
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                          ##%%%#                                          
+                             :=*%=       -# .@@@-       =%*=:                             
+                            ##=: -#**###*+: .@@@@@@@%#*#@@@@@*                            
+                            =*    .:         @@@@@@@@@@@@@@@@=                            
+                    :    :+%*-        :--=+++==++*#%@@@@@@@@@@%+:    :.                   
+                  =%*+-+%#-     .=+#@@@@@@@@@         :=*%@@@@@@@@*=%@@+                  
+                .@#:   .     -*@@@@@@@@@@%%##::.           -*@@@@@@@@@@@%.                
+                 -*.      .*@@@@@@@@#=:.     @@@@@%#+:        -%@@@@@@@@-                 
+                 -@=    :#@@@@@@@*-          @@@@@@@@@@#=       :#@@@@@@+                 
+                *@-   .*@@@@@@%=             @@@@@@@@@@@@@*.      :#@@@@@#                
+           =-:-%#.   +@@@@@@@*               @@@@@@@@@@@@@@@=       =@@@@@%-.:=.          
+          +@-:--   .#@@@@@@@+                @@@@@@@@@@@@@@@@+       .%@@@@@@@@#          
+         -@-      .%@@@@@@@#                 @@@@@@@@@@@@@@@@@:        #@@@@@@@@*         
+         .==+.    %@@@@@@@@=                 @@@@@@@@@@@@@@@@@*         %@@@@@#=.         
+           :@=   *@@@@@@@@@=                 @@@@@@@@@@@@@@@@@*         :@@@@@+           
+           #@   .@@@@@@@@@@#                 @@@@@@@@@@@@@@@@@=          *@@@@@           
+           @+   +@@@@@@@@@@@:                @@@@@@@@@@@@@@@@#           .@@@@@-          
+       :+=+*.   %@@@@@@@@@@@%                @@@@@@@@@@@@@@@@:            @@@@@%*+-       
+       *@       @@@@@@@@@@@@@-               @@@@@@@@@@@@@@@#             %@@@@@@@@       
+       *@       %@@@@@@@@@@@@+               @@@@@@@@@@@@@@@*             %@@@@@@@@       
+       .-=+#:   #@@@@@@@@@@@@:  :+=:         @@@@@@@@@#++#@@%             @@@@@%==:       
+           @#   =@@@@@@@@@@@: .#@@@@@#+-:    %@@@%+-.      #@%.          :@@@@@-          
+           +@.   @@@@@@@@@@%  :@@@@@@@@@@@*  %@+           %@@=          *@@@@@           
+           .@+   =@@@@@@@@@@+  -@@@@@@@%*=. =*@@*+-.      *@@+          :@@@@@+           
+         .===.    #@@@@@@@@@@-   :-:.      =@..@@@@@@%**#@@@@           %@@@@@@*-         
+         :@=       #@@@@@@@@@#      .      @++ +@@@@@#@@@@@@:         .%@@@@@@@@*         
+          =@+-=+    *@@@@@@@@@@*=-=#%      = %*#@@@@@-.=**=          .%@@@@@@@@#          
+           -:. *@:   =@@@@@@@@@@@@@@-        @@@@@@@@%              =@@@@@%: .:           
+                =@=   .+@@@@@@@@@@@%  .  .  :@@@%@@%@@-           :#@@@@@#                
+                 :%*    .*@@@@@@@@@= :%  %: =+@@.%@=+@#         :#@@@@@@+                 
+                 :*.      .+%@@@@@@@@@@@@@@@@:                -#@@@@@@@@+                 
+                .#%:  .-:    :+%@@@@@@@@@@@@@:            .=*@@@@@@@@@@@@-                
+                  :#*+=-#%+:     :=*%@@@@@@@@:       .-+*%@@@@@@@%+-*@@+.                 
+                    .    .=#%+         .:--=+++**#%@@@@@@@@@@@%+.                         
+                            -#    .-:        #@@@@@@@@@@@@@@@+                            
+                            =%+-.-*=*#####=  %@@@@@%#*++@@@@@%                            
+                             .-+#+       :%..%@@-       :#+-.                             
+                                          +####*                                          
+                                                                                          
+                                                                                          
+                                                                                          
+&lt;/pre&gt;&lt;/html&gt;
+&lt;&lt;next 0.5s&gt;&gt;
+&lt;span class=&quot;binary&quot;&gt;01000011010001010100111001010100010100100100000101001100001000000100111001001111010011110101001101010000010010000100010101010010010001010010000001001110010011110100010001000101001000000110000101100011011000110110010101110011011100110110010101100100&lt;/span&gt;&lt;br&gt;
+&lt;span class=&quot;green&quot;&gt;CENTRAL NOOSPHERE NODE&lt;/span&gt; accessed.&lt;br&gt;
+Last login: 4.756.999.M41&lt;br&gt;
+&lt;&lt;next 1s&gt;&gt;
+&lt;&lt;type 60ms&gt;&gt;&lt;span class=&quot;green&quot;&gt;&gt; ls /HOUNDS_OF_PAX&lt;/span&gt;&lt;&lt;/type&gt;&gt;
+&lt;&lt;next 1.5s&gt;&gt;
+[[&gt; open CHAPTER BASICS|CHAPTER BASICS]]
+[[&gt; open CHAPTER ORGANISATION|CHAPTER ORGANISATION]]
+[[&gt; open ANNALS OF HISTORY: THE CHAINING|ANNALS OF HISTORY: THE CHAINING]]
+[[&gt; open THE HOUNDS OF LEGEND|THE HOUNDS OF LEGEND]]
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="ANNALS OF HISTORY: THE CHAINING" tags="" position="400,200" size="100,100">ANNALS OF HISTORY: THE CHAINING
+TODO
+
+[[back]]</tw-passagedata><tw-passagedata pid="4" name="THE HOUNDS OF LEGEND" tags="" position="275,325" size="100,100">! THE HOUNDS OF LEGEND
+TODO
+
+[[back]]</tw-passagedata><tw-passagedata pid="5" name="CHAPTER BASICS" tags="" position="150,200" size="100,100">!HOUNDS OF PAX
+A Primaris-only chapter, the Hounds of Pax were established during the Ultima Founding. Supposed successors of the Imperial Fists, they are unbreakable and fiercely loyal warriors of the Imperium.
+The warriors of change and survival, they cemented themselves as a highly-technological chapter set on outsmarting enemies of the Imperium -- and securing the victory before the battle begins.
+
+[[back]]</tw-passagedata><tw-passagedata pid="6" name="CHAPTER ORGANISATION" tags="" position="275,200" size="100,100">! CHAPTER ORRANISATION
+TODO
+
+[[back]]</tw-passagedata><tw-passagedata pid="7" name="back" tags="" position="500,50" size="100,100">&lt;&lt;type 60ms&gt;&gt;&lt;span class=&quot;green&quot;&gt;&gt; ls /HOUNDS_OF_PAX&lt;/span&gt;&lt;&lt;/type&gt;&gt;
+&lt;&lt;timed 1.5s&gt;&gt;
+[[&gt; open CHAPTER BASICS|CHAPTER BASICS]]
+[[&gt; open CHAPTER ORGANISATION|CHAPTER ORGANISATION]]
+[[&gt; open ANNALS OF HISTORY: THE CHAINING|ANNALS OF HISTORY: THE CHAINING]]
+[[&gt; open THE HOUNDS OF LEGEND|THE HOUNDS OF LEGEND]]
 &lt;&lt;/timed&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
